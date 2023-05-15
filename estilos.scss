@@ -1,29 +1,39 @@
+$color1: springgreen;
+$color2: #333;
+$color3: black;
+$color4: white;
+$color5: orange;
+
+
+
+
+
 /* personalizacion del header */
 header{
-    background-color: springgreen;
+    background-color: $color1;
 }
 
 
 .navbar-brand{
-    text-shadow: 0 0 5px black; 
+    text-shadow: 0 0 5px $color3; 
     padding: 20px !important;
 }
 
 .navbar-brand:hover{
-    background-color: #333;
+    background-color: $color2;
     border-radius: 10px;
     transform: scale(1.10);
     transition: 1.1s;
 }
 
 .nav-link{
-    color: white !important;
-    text-shadow: 0 0 5px black;
+    color: $color4 !important;
+    text-shadow: 0 0 5px $color3;
     padding: 20px !important;
 }
 
 .nav-link:hover{
-    background-color: #333;
+    background-color: $color2;
     border-radius: 10px;
     transform: scale(1.10);
     transition: 1.1s;
@@ -57,34 +67,34 @@ header{
 .nos1texto{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #333;
-    color: white;
+    background-color: $color2;
+    color: $color4;
     padding: 10px;
 }
 
 
 .container-fluid{
-    background-color: springgreen;
+    background-color: $color1;
     text-align: center;
     margin-bottom: 0;
 }
 
 .btn-primary:hover{
-    background-color: orange;
+    background-color: $color5;
 }
 
 /* fin personalizacion del contenido de nosotros */
 /* inicio personalizacion del contenido de cabañas */
 
 .mc1{
-    background-color: #333;
+    background-color: $color2;
 }
 
 .title{
     text-align: center;
     font-size: 3.5rem;
     padding-top: 3rem;
-    color: #fff;
+    color: $color4;
 }
 
 
@@ -104,7 +114,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid orange;
+    border: 2px solid $color5;
     padding: 20px;
 }
 
@@ -150,18 +160,18 @@ section{
 /* personalizacion del footer */
 
 footer{
-    background-color: springgreen;
+    background-color: $color1;
     width: 100%;
     height: 160px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    color: white;
+    color: $color4;
     align-items: center;
 }
 
 .redes a{
-    color: white;
+    color: $color4;
     letter-spacing: 30px;
     font-size: 40px;
 }
