@@ -1,0 +1,169 @@
+/* personalizacion del header */
+header{
+    background-color: springgreen;
+}
+
+
+.navbar-brand{
+    text-shadow: 0 0 5px black; 
+    padding: 20px !important;
+}
+
+.navbar-brand:hover{
+    background-color: #333;
+    border-radius: 10px;
+    transform: scale(1.10);
+    transition: 1.1s;
+}
+
+.nav-link{
+    color: white !important;
+    text-shadow: 0 0 5px black;
+    padding: 20px !important;
+}
+
+.nav-link:hover{
+    background-color: #333;
+    border-radius: 10px;
+    transform: scale(1.10);
+    transition: 1.1s;
+}
+
+/* fin personalizacion del header */
+
+/* inicio personalizacion del contenido de nosotros */
+
+.carousel-item{
+    width: 100%;
+    height: 500px;
+}
+
+.active{
+    background-image: url(./img/b5b843a2-5325-49b2-a7df-01327e002282.webp);
+    background-position: center;
+    background-size: cover;
+}
+.active2{
+    background-image: url(./img/cabanas-jalisco-portada.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.active3{
+    background-image: url(./img/cabanias-el-calafate-santa-cruz-argentina-e1551232067565-800x350.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nos1texto{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+.container-fluid{
+    background-color: springgreen;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.btn-primary:hover{
+    background-color: orange;
+}
+
+/* fin personalizacion del contenido de nosotros */
+/* inicio personalizacion del contenido de cabañas */
+
+.mc1{
+    background-color: #333;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    color: #fff;
+}
+
+
+section{
+    margin-inline: 10%;
+}
+
+.galeria{
+    padding-block: 10%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 20px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-img-top{
+    object-fit: cover;
+    object-position: center;
+    min-height: 300px;
+    max-height: 300px; 
+}
+
+@media screen and (min-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+    .nos1texto{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card-img-top{
+        object-fit: cover;
+        object-position: center;
+        min-height: 200px;
+        max-height: 200px; 
+    }
+    .card{
+        padding: 5px;
+    }
+}
+
+/* fin personalizacion del contenido de cabañas */
+
+/* personalizacion del footer */
+
+footer{
+    background-color: springgreen;
+    width: 100%;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.redes a{
+    color: white;
+    letter-spacing: 30px;
+    font-size: 40px;
+}
+
+/* fin personalizacion del footer */
